@@ -1,9 +1,10 @@
 import algosdk
 import os
 from account_utilities import *
+from form import create_patent
 
 def main_menu():
-    os.system('cls')
+#    os.system('cls')
     print ("Selecciona una opción")
     print ("\t1 - Consultar patentes existentes")
     print ("\t2 - Crear Cuenta")
@@ -29,8 +30,7 @@ while True:
 		print ("")
 		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
 	elif opcionMenu=="4":
-		print ("")
-		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+		patente = create_patent()
 	elif opcionMenu=="5":
 		print ("")
 		input("Has pulsado la opción 3...\npulsa una tecla para continuar")

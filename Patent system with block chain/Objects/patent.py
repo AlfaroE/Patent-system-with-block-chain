@@ -1,5 +1,9 @@
 
 class Patent:
+
+    def set_folio(self,folio):
+        self.folio = folio
+
     def set_fecha_solicitud(self, fecha):
         self.fecha = fecha
     
