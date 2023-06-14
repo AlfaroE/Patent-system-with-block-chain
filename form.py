@@ -89,5 +89,5 @@ def create_patent():
     pdf.generate()
     with open('./PatentFiles/'+nombre+'.pdf','wb') as file:
         file.write(f.getvalue())
-    
+    return './PatentFiles/'+nombre+'.pdf'
 

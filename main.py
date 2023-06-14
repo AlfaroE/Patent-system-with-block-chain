@@ -2,6 +2,7 @@ import algosdk
 import os
 from account_utilities import *
 from form import create_patent
+from hash_file import get_hash
 
 def main_menu():
 #    os.system('cls')
@@ -31,6 +32,8 @@ while True:
 		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
 	elif opcionMenu=="4":
 		patente = create_patent()
+		hash = get_hash(patente,65536)
+		print(hash)
 	elif opcionMenu=="5":
 		print ("")
 		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
