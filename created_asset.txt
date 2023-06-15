@@ -1,0 +1,53 @@
+Signed transaction with txID: 5BXLIIS2XE4FIA3BN2TPSLO65VAIDV34ASTMH7BZQUVTDP5W26NA
+TXID:  5BXLIIS2XE4FIA3BN2TPSLO65VAIDV34ASTMH7BZQUVTDP5W26NA
+Result confirmed in round: 30594241
+Transaction information: {
+    "asset-index": 239302561,
+    "confirmed-round": 30594241,
+    "pool-error": "",
+    "txn": {
+        "sig": "cLfJYSZjUStEq7ToM70HOG5r+KUuPJymnb6OQBuXVKI+v+PJphPqpQhBIXJSEFteE+2NFD2QnMIwH+IP/5MPCg==",
+        "txn": {
+            "apar": {
+                "an": "patent",
+                "au": "https://path/to/my/asset/details",
+                "c": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",      
+                "f": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",      
+                "m": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",      
+                "r": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",      
+                "t": 1000,
+                "un": "PATENT"
+            },
+            "fee": 1000,
+            "fv": 30594239,
+            "gen": "testnet-v1.0",
+            "gh": "SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9/cOUJOiI=",
+            "lv": 30595239,
+            "snd": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",        
+            "type": "acfg"
+        }
+    }
+}
+Asset ID: 239302561
+{
+    "clawback": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",
+    "creator": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",
+    "decimals": 0,
+    "default-frozen": false,
+    "freeze": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",
+    "manager": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",
+    "name": "patent",
+    "name-b64": "cGF0ZW50",
+    "reserve": "YG6ZXLSRL7X567Z3MSKCI4ECQCHQMSQFO6PRF4S3C2ZIAGXHI2ZUVHOKDU",
+    "total": 1000,
+    "unit-name": "PATENT",
+    "unit-name-b64": "UEFURU5U",
+    "url": "https://path/to/my/asset/details",
+    "url-b64": "aHR0cHM6Ly9wYXRoL3RvL215L2Fzc2V0L2RldGFpbHM="
+}
+Asset ID: 239302561
+{
+    "amount": 1000,
+    "asset-id": 239302561,
+    "is-frozen": false
+}

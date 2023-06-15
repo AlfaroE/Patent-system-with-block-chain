@@ -1,8 +1,6 @@
-import algosdk
 import os
 from account_utilities import *
-from form import create_patent
-from hash_file import get_hash
+
 
 def main_menu():
 #    os.system('cls')
@@ -13,6 +11,7 @@ def main_menu():
     print ("\t4 - Solicitar Patente")
     print ("\t5 - Consultar Saldo")
     print ("\t6 - Consultar tus patentes")
+    print ("\t7 - Consultar más información de una patente")
     print ("\t9 - Salir")
 
 
@@ -21,25 +20,22 @@ while True:
 	main_menu()
  
 	opcionMenu = input("inserta un numero valor >> ")
+	print('')
  
 	if opcionMenu=="1":
-		print ("")
-		input("Has pulsado la opción 2...\npulsa una tecla para continuar")
+		consult_patent()
 	elif opcionMenu=="2":
 		sign_in()
 	elif opcionMenu=="3":
-		print ("")
-		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+		dispenser()
 	elif opcionMenu=="4":
-		patente = create_patent()
-		hash = get_hash(patente,65536)
-		print(hash)
+		patent_request()
 	elif opcionMenu=="5":
-		print ("")
-		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+		consult_amount()
 	elif opcionMenu=="6":
-		print ("")
-		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+		consult_assets()
+	elif opcionMenu=="7":
+		consult_pdf()
 	elif opcionMenu=="9":
 		break
 	else:

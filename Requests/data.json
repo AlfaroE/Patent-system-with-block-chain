@@ -1,0 +1,26 @@
+{
+    "data": {
+        "algoRequests": {
+            "01": {
+                "usrAddress": "EDPOXN6YC76HJ7T2XYLWUA7TA274FPKCWI5UL37SCEFNIXYRK2QIYM56IE",
+                "amount": "01",
+                "ticketBarCode": "123456789456126456"
+            }
+        },
+        "patentRequests": {
+            "01": {
+                "usrAddress": "EDPOXN6YC76HJ7T2XYLWUA7TA274FPKCWI5UL37SCEFNIXYRK2QIYM56IE",
+                "txid": "MBES6MZHC6E73XFMZFEZCVYHWRTFVLA",
+                "patentTitle": "Caja de arena para gatos",
+                "fileHash": "dsaklakdlsñkddsa",
+                "filePath": "./PatentFiles/Caja de arena para gatos.pdf"
+            }
+        },
+        "patentCatalog": {
+            "01": {
+                "patentTitle": "Caja de arena para gatos",
+                "file": "./PatentFiles/Caja de arena para gatos.pdf"
+            }
+        }
+    }
+}

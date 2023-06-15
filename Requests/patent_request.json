@@ -1,0 +1,17 @@
+{
+    "patentRequests": {
+        "01": {
+            "usrAddress": "AAASKKDDPDKFPDKDKD",
+            "txid": "DSADSAFDADSDSAD",
+            "patentTitle": "Licuadora",
+            "fileHash": "SADJSKADJKLSJ"
+        },
+        "02": {
+            "usrAddress": "AAASKKDDPDKFPDKDKDDFFDGDS",
+            "txid": "",
+            "ticketBarCode": "5551122315489431",
+            "patentTitle": "Aspiradora",
+            "fileHash": "SADJSKADJKLSJ"
+        }
+    }
+}

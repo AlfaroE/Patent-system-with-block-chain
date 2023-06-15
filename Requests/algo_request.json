@@ -1,0 +1,14 @@
+{
+    "algoRequests": {
+        "01": {
+            "usrAddress": "AAASKKDDPDKFPDKDKD",
+            "amount": "05",
+            "ticketBarCode": "123456789456126456"
+        },
+        "02": {
+            "usrAddress": "AAASKKDDPDKFPDKDKDDFFDGDS",
+            "amount": "20",
+            "ticketBarCode": "5551122315489431"
+        }
+    }
+}
