@@ -105,6 +105,7 @@ def consult_pdf():
         for key in dict:
             if dict[key]['patentTitle'] == title:
                 path = dict[key]['file']
+                print(path)
                 subprocess.Popen([path], shell= True)
         input("pulsa enter para continuar")
         print('')
