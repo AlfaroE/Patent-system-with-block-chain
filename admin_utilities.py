@@ -36,24 +36,32 @@ def algo_request():
                         r2 = requests.delete('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests/'+key+'.json')
                         if r2.status_code == 200:
                             print('La transacción fue exitosa')
-                            if(((len(dict)) - 1) < 2):
+                            r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests.json')
+                            dict2 = r4.json()
+                            if(len(dict2) < 2):
                                 print('No hay más solicitudes')
                                 break
                         else:
                             print('La transacción no fue completada')
-                            if(((len(dict)) - 1) < 2):
+                            r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests.json')
+                            dict2 = r4.json()
+                            if(len(dict2) < 2):
                                 print('No hay más solicitudes')
                                 break
                     elif opt2 == 'n':
                         r2 = requests.delete('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests/'+key+'.json')
                         print('La solicitud NO fue procesada y fue eliminada')
-                        if(((len(dict)) - 1) < 2):
+                        r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests.json')
+                        dict2 = r4.json()
+                        if(len(dict2) < 2):
                             print('No hay más solicitudes')
                             break
                 elif opt == 'n':
                     r2 = requests.delete('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests/'+key+'.json')
                     print('La solicitud NO fue procesada y fue eliminada')
-                    if(((len(dict)) - 1) < 2):
+                    r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/algoRequests.json')
+                    dict2 = r4.json()
+                    if(len(dict2) < 2):
                         print('No hay más solicitudes')
                         break
         else:
@@ -91,24 +99,32 @@ def patent_request():
                         r3 = requests.delete('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests/'+key+'.json')
                         if r3.status_code == 200 and r2.status_code == 200:
                             print('La transacción fue exitosa')
-                            if(((len(dict)) - 1) < 2):
+                            r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests.json')
+                            dict2 = r4.json()
+                            if(len(dict2) < 2):
                                 print('No hay más solicitudes')
                                 break
                         else:
                             print('La transacción no fue completada')
-                            if(((len(dict)) - 1) < 2):
+                            r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests.json')
+                            dict2 = r4.json()
+                            if(len(dict2) < 2):
                                 print('No hay más solicitudes')
                                 break
                     elif opt2 == 'n':
                         r3 = requests.delete('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests/'+key+'.json')
                         print('La solicitud NO fue procesada y fue eliminada')
-                        if(((len(dict)) - 1) < 2):
+                        r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests.json')
+                        dict2 = r4.json()
+                        if(len(dict2) < 2):
                             print('No hay más solicitudes')
                             break
                 elif opt == 'n':
                     r3 = requests.delete('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests/'+key+'.json')
                     print('La solicitud NO fue procesada y fue eliminada')
-                    if(((len(dict)) - 1) < 2):
+                    r4 = requests.get('https://patents-1f7da-default-rtdb.firebaseio.com/data/patentRequests.json')
+                    dict2 = r4.json()
+                    if(len(dict2) < 2):
                         print('No hay más solicitudes')
                         break
         else:
