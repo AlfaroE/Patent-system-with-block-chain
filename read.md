@@ -96,3 +96,37 @@ Si todo sale bien se abrirá un pdf en un navegador con toda la información que
 ### Salir ###
 
 Finalmente, si le damos la opción de salir se nos cerrará el sistema.
+
+## Usuario Administrador ##
+
+Para poder entrar a este sistema se debe de ingresar el siguiente comando dentro del cli en la carpeta de github:
+```
+python main_admin.py
+```
+Este tipo de usuario tiene únicamente dos elementos en su menú:
+
+![](https://github.com/AlfaroE/Patent-system-with-block-chain/blob/main/images/menu_admin.png)
+
+### Procesar Algos Request ###
+
+En esta opción nuestro usuario administrador aceptará o rechazará las peticiones de obtener algos de los demás usuarios. Si elegimos esta opción se nos mostrará el id del usuario y la cantidad de algos que solicita, si decidimos proceder con la petición se nos pedirán nuestro ID y llave privada.
+
+![](https://github.com/AlfaroE/Patent-system-with-block-chain/blob/main/images/solicitud_algos.png)
+
+Tras ingresar nuestros datos se nos mostrará el id de la transacción y le indicaremos que la transacción se realizó de forma exitosa.
+
+![](https://github.com/AlfaroE/Patent-system-with-block-chain/blob/main/images/solicitud_algos_fin.png)
+
+### Procesar Patent Request ###
+
+En esta opción aceptaremos o rechazaremos las soliciutdes de patentes de nuestros usuarios normales. Esta opción cuenta con una cola donde se irán mostrando las distintas peticiones. La primera petición que se muestra contiene el ID del usuario, el título, el hash del archivo, y el id de la transacción. Finalmente si la aceptamos se nos pedirá el private key de nuestro administrador:
+
+![](https://github.com/AlfaroE/Patent-system-with-block-chain/blob/main/images/patent_request.png)
+
+Finalmente. Si ingresamos nuestra llave privada de manera correcta se nos retornará el id de la transacción y el número round indicando que se terminó con ese proceso. Le indicamos al sistema que se concretó la transacción y nos mostrará la siguiente transacción en la fila:
+
+![](https://github.com/AlfaroE/Patent-system-with-block-chain/blob/main/images/patent_request_fin.png)
+
+### Salir ###
+
+Esta opción cierra el programa correctamente.
